@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_dcl_00_roles_001_seed_security_roles
+      author: pemarival
+      labels: "01_ddl,03_dcl,roles"
+      comment: Seeds differentiated security roles.
+      changes:
+        - sqlFile:
+            path: 001_seed_security_roles.sql
+            relativeToChangelogFile: true
+            stripComments: false

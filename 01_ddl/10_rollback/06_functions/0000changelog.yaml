@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10_rollback_06_functions_001_drop_functions
+      author: pemarival
+      labels: "10_rollback,06_functions"
+      comment: Drops SQL functions created by the model.
+      changes:
+        - sqlFile:
+            path: 001_drop_functions.sql
+            relativeToChangelogFile: true
+            stripComments: false
