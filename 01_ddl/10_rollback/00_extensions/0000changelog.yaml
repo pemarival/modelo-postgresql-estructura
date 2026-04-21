@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10_rollback_00_extensions_001_disable_pgcrypto
+      author: pemarival
+      labels: "10_rollback,00_extensions"
+      comment: Drops pgcrypto extension if present.
+      changes:
+        - sqlFile:
+            path: 001_disable_pgcrypto_extension.sql
+            relativeToChangelogFile: true
+            stripComments: false

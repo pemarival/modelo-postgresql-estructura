@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_dml_validation_001_dependency_checks
+      author: pemarival
+      labels: "03_dml,validation,dependencies"
+      comment: Runs dependency-focused data integrity checks for test dataset.
+      changes:
+        - sqlFile:
+            path: 001_dependency_checks.sql
+            relativeToChangelogFile: true
+            stripComments: false
+            splitStatements: false

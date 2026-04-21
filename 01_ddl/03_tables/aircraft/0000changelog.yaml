@@ -1,0 +1,91 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_aircraft_001_aircraft_manufacturer
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table aircraft_manufacturer.
+      changes:
+        - sqlFile:
+            path: 001_aircraft_manufacturer.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_002_aircraft_model
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table aircraft_model.
+      changes:
+        - sqlFile:
+            path: 002_aircraft_model.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_003_cabin_class
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table cabin_class.
+      changes:
+        - sqlFile:
+            path: 003_cabin_class.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_004_aircraft
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table aircraft.
+      changes:
+        - sqlFile:
+            path: 004_aircraft.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_005_aircraft_cabin
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table aircraft_cabin.
+      changes:
+        - sqlFile:
+            path: 005_aircraft_cabin.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_006_aircraft_seat
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table aircraft_seat.
+      changes:
+        - sqlFile:
+            path: 006_aircraft_seat.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_007_maintenance_provider
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table maintenance_provider.
+      changes:
+        - sqlFile:
+            path: 007_maintenance_provider.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_008_maintenance_type
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table maintenance_type.
+      changes:
+        - sqlFile:
+            path: 008_maintenance_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_aircraft_009_maintenance_event
+      author: pemarival
+      labels: "01_ddl,03_tables,aircraft"
+      comment: Creates table maintenance_event.
+      changes:
+        - sqlFile:
+            path: 009_maintenance_event.sql
+            relativeToChangelogFile: true
+            stripComments: false

@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10_rollback_01_schemas_001_drop_schemas
+      author: pemarival
+      labels: "10_rollback,01_schemas"
+      comment: Drops schemas created by the data model.
+      changes:
+        - sqlFile:
+            path: 001_drop_schemas.sql
+            relativeToChangelogFile: true
+            stripComments: false

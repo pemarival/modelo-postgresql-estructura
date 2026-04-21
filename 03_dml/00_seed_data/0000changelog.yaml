@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_dml_seed_001_reference_data
+      author: pemarival
+      labels: "03_dml,seed,reference"
+      comment: Seeds reference data required by dependent domains.
+      changes:
+        - sqlFile:
+            path: 001_reference_data.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_dml_seed_002_identity_security
+      author: pemarival
+      labels: "03_dml,seed,identity_security"
+      comment: Seeds identity and security data.
+      changes:
+        - sqlFile:
+            path: 002_identity_security.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_dml_seed_003_customer_loyalty
+      author: pemarival
+      labels: "03_dml,seed,customer_loyalty"
+      comment: Seeds customer and loyalty data.
+      changes:
+        - sqlFile:
+            path: 003_customer_loyalty.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_dml_seed_004_operations
+      author: pemarival
+      labels: "03_dml,seed,operations"
+      comment: Seeds airport, aircraft and flight operations data.
+      changes:
+        - sqlFile:
+            path: 004_operations.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_dml_seed_005_commercial_financial
+      author: pemarival
+      labels: "03_dml,seed,commercial_financial"
+      comment: Seeds sales, boarding, payment and billing data.
+      changes:
+        - sqlFile:
+            path: 005_commercial_financial.sql
+            relativeToChangelogFile: true
+            stripComments: false

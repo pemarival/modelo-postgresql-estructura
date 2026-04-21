@@ -1,0 +1,63 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_security_001_user_status
+      author: pemarival
+      labels: "01_ddl,03_tables,security"
+      comment: Creates table user_status.
+      changes:
+        - sqlFile:
+            path: 001_user_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_security_002_security_role
+      author: pemarival
+      labels: "01_ddl,03_tables,security"
+      comment: Creates table security_role.
+      changes:
+        - sqlFile:
+            path: 002_security_role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_security_003_security_permission
+      author: pemarival
+      labels: "01_ddl,03_tables,security"
+      comment: Creates table security_permission.
+      changes:
+        - sqlFile:
+            path: 003_security_permission.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_security_004_user_account
+      author: pemarival
+      labels: "01_ddl,03_tables,security"
+      comment: Creates table user_account.
+      changes:
+        - sqlFile:
+            path: 004_user_account.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_security_005_user_role
+      author: pemarival
+      labels: "01_ddl,03_tables,security"
+      comment: Creates table user_role.
+      changes:
+        - sqlFile:
+            path: 005_user_role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_security_006_role_permission
+      author: pemarival
+      labels: "01_ddl,03_tables,security"
+      comment: Creates table role_permission.
+      changes:
+        - sqlFile:
+            path: 006_role_permission.sql
+            relativeToChangelogFile: true
+            stripComments: false
+
+

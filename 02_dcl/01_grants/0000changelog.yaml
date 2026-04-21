@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_dcl_01_grants_001_seed_permissions_grants
+      author: pemarival
+      labels: "01_ddl,03_dcl,grants"
+      comment: Seeds permissions and role-permission grants.
+      changes:
+        - sqlFile:
+            path: 001_seed_permissions_grants.sql
+            relativeToChangelogFile: true
+            stripComments: false

@@ -1,0 +1,20 @@
+CREATE TABLE audit_event (
+    audit_event_id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+    audit_action_type_id uuid NOT NULL REFERENCES audit_action_type(audit_action_type_id),
+    audit_resource_type_id uuid NOT NULL REFERENCES audit_resource_type(audit_resource_type_id),
+    user_account_id uuid REFERENCES user_account(user_account_id),
+    resource_id uuid,
+    resource_natural_key varchar(120),
+    event_status varchar(20) NOT NULL,
+    event_summary varchar(300),
+    event_data jsonb,
+    source_system varchar(80),
+    ip_address varchar(45),
+    user_agent varchar(300),
+    correlation_id varchar(80),
+    occurred_at timestamptz NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    updated_at timestamptz NOT NULL DEFAULT now(),
+    CONSTRAINT ck_audit_event_status CHECK (event_status IN ('SUCCESS', 'FAILURE', 'WARNING')),
+    CONSTRAINT ck_audit_event_data_type CHECK (event_data IS NULL OR jsonb_typeof(event_data) IN ('object', 'array'))
+);

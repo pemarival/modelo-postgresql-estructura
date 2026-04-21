@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: 00_seed_data/0000changelog.yaml
+      relativeToChangelogFile: true
+      contextFilter: 03_dml
+      labels: 00_seed_data
+  - include:
+      file: 01_validations/0000changelog.yaml
+      relativeToChangelogFile: true
+      contextFilter: 03_dml
+      labels: 01_validations
