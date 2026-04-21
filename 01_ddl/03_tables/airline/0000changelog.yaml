@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_airline_001_airline
+      author: pemarival
+      labels: "01_ddl,03_tables,airline"
+      comment: Creates table airline.
+      changes:
+        - sqlFile:
+            path: 001_airline.sql
+            relativeToChangelogFile: true
+            stripComments: false

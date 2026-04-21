@@ -1,0 +1,91 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_customer_loyalty_001_customer_category
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table customer_category.
+      changes:
+        - sqlFile:
+            path: 001_customer_category.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_002_benefit_type
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table benefit_type.
+      changes:
+        - sqlFile:
+            path: 002_benefit_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_003_loyalty_program
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table loyalty_program.
+      changes:
+        - sqlFile:
+            path: 003_loyalty_program.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_004_loyalty_tier
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table loyalty_tier.
+      changes:
+        - sqlFile:
+            path: 004_loyalty_tier.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_005_customer
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table customer.
+      changes:
+        - sqlFile:
+            path: 005_customer.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_006_loyalty_account
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table loyalty_account.
+      changes:
+        - sqlFile:
+            path: 006_loyalty_account.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_007_loyalty_account_tier
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table loyalty_account_tier.
+      changes:
+        - sqlFile:
+            path: 007_loyalty_account_tier.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_008_miles_transaction
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table miles_transaction.
+      changes:
+        - sqlFile:
+            path: 008_miles_transaction.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_customer_loyalty_009_customer_benefit
+      author: pemarival
+      labels: "01_ddl,03_tables,customer_loyalty"
+      comment: Creates table customer_benefit.
+      changes:
+        - sqlFile:
+            path: 009_customer_benefit.sql
+            relativeToChangelogFile: true
+            stripComments: false

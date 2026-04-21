@@ -1,0 +1,121 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_sales_reservations_001_reservation_status
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table reservation_status.
+      changes:
+        - sqlFile:
+            path: 001_reservation_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_002_sale_channel
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table sale_channel.
+      changes:
+        - sqlFile:
+            path: 002_sale_channel.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_003_fare_class
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table fare_class.
+      changes:
+        - sqlFile:
+            path: 003_fare_class.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_004_fare
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table fare.
+      changes:
+        - sqlFile:
+            path: 004_fare.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_005_ticket_status
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table ticket_status.
+      changes:
+        - sqlFile:
+            path: 005_ticket_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_006_reservation
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table reservation.
+      changes:
+        - sqlFile:
+            path: 006_reservation.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_007_reservation_passenger
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table reservation_passenger.
+      changes:
+        - sqlFile:
+            path: 007_reservation_passenger.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_008_sale
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table sale.
+      changes:
+        - sqlFile:
+            path: 008_sale.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_009_ticket
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table ticket.
+      changes:
+        - sqlFile:
+            path: 009_ticket.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_010_ticket_segment
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table ticket_segment.
+      changes:
+        - sqlFile:
+            path: 010_ticket_segment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_011_seat_assignment
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table seat_assignment.
+      changes:
+        - sqlFile:
+            path: 011_seat_assignment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_sales_reservations_012_baggage
+      author: pemarival
+      labels: "01_ddl,03_tables,sales_reservations"
+      comment: Creates table baggage.
+      changes:
+        - sqlFile:
+            path: 012_baggage.sql
+            relativeToChangelogFile: true
+            stripComments: false
