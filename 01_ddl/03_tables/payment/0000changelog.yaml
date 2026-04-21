@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_payment_001_payment_status
+      author: pemarival
+      labels: "01_ddl,03_tables,payment"
+      comment: Creates table payment_status.
+      changes:
+        - sqlFile:
+            path: 001_payment_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_payment_002_payment_method
+      author: pemarival
+      labels: "01_ddl,03_tables,payment"
+      comment: Creates table payment_method.
+      changes:
+        - sqlFile:
+            path: 002_payment_method.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_payment_003_payment
+      author: pemarival
+      labels: "01_ddl,03_tables,payment"
+      comment: Creates table payment.
+      changes:
+        - sqlFile:
+            path: 003_payment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_payment_004_payment_transaction
+      author: pemarival
+      labels: "01_ddl,03_tables,payment"
+      comment: Creates table payment_transaction.
+      changes:
+        - sqlFile:
+            path: 004_payment_transaction.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_payment_005_refund
+      author: pemarival
+      labels: "01_ddl,03_tables,payment"
+      comment: Creates table refund.
+      changes:
+        - sqlFile:
+            path: 005_refund.sql
+            relativeToChangelogFile: true
+            stripComments: false

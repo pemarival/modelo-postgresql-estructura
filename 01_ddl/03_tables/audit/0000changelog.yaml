@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_audit_001_audit_action_type
+      author: pemarival
+      labels: "01_ddl,03_tables,audit"
+      comment: Creates table audit_action_type.
+      changes:
+        - sqlFile:
+            path: 001_audit_action_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_audit_002_audit_resource_type
+      author: pemarival
+      labels: "01_ddl,03_tables,audit"
+      comment: Creates table audit_resource_type.
+      changes:
+        - sqlFile:
+            path: 002_audit_resource_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_audit_003_audit_event
+      author: pemarival
+      labels: "01_ddl,03_tables,audit"
+      comment: Creates table audit_event.
+      changes:
+        - sqlFile:
+            path: 003_audit_event.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_audit_004_audit_event_field_change
+      author: pemarival
+      labels: "01_ddl,03_tables,audit"
+      comment: Creates table audit_event_field_change.
+      changes:
+        - sqlFile:
+            path: 004_audit_event_field_change.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_audit_005_audit_session_event
+      author: pemarival
+      labels: "01_ddl,03_tables,audit"
+      comment: Creates table audit_session_event.
+      changes:
+        - sqlFile:
+            path: 005_audit_session_event.sql
+            relativeToChangelogFile: true
+            stripComments: false

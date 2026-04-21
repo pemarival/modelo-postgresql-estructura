@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_boarding_001_boarding_group
+      author: pemarival
+      labels: "01_ddl,03_tables,boarding"
+      comment: Creates table boarding_group.
+      changes:
+        - sqlFile:
+            path: 001_boarding_group.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_boarding_002_check_in_status
+      author: pemarival
+      labels: "01_ddl,03_tables,boarding"
+      comment: Creates table check_in_status.
+      changes:
+        - sqlFile:
+            path: 002_check_in_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_boarding_003_check_in
+      author: pemarival
+      labels: "01_ddl,03_tables,boarding"
+      comment: Creates table check_in.
+      changes:
+        - sqlFile:
+            path: 003_check_in.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_boarding_004_boarding_pass
+      author: pemarival
+      labels: "01_ddl,03_tables,boarding"
+      comment: Creates table boarding_pass.
+      changes:
+        - sqlFile:
+            path: 004_boarding_pass.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_boarding_005_boarding_validation
+      author: pemarival
+      labels: "01_ddl,03_tables,boarding"
+      comment: Creates table boarding_validation.
+      changes:
+        - sqlFile:
+            path: 005_boarding_validation.sql
+            relativeToChangelogFile: true
+            stripComments: false

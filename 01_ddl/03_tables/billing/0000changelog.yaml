@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_billing_001_tax
+      author: pemarival
+      labels: "01_ddl,03_tables,billing"
+      comment: Creates table tax.
+      changes:
+        - sqlFile:
+            path: 001_tax.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_billing_002_exchange_rate
+      author: pemarival
+      labels: "01_ddl,03_tables,billing"
+      comment: Creates table exchange_rate.
+      changes:
+        - sqlFile:
+            path: 002_exchange_rate.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_billing_003_invoice_status
+      author: pemarival
+      labels: "01_ddl,03_tables,billing"
+      comment: Creates table invoice_status.
+      changes:
+        - sqlFile:
+            path: 003_invoice_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_billing_004_invoice
+      author: pemarival
+      labels: "01_ddl,03_tables,billing"
+      comment: Creates table invoice.
+      changes:
+        - sqlFile:
+            path: 004_invoice.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_billing_005_invoice_line
+      author: pemarival
+      labels: "01_ddl,03_tables,billing"
+      comment: Creates table invoice_line.
+      changes:
+        - sqlFile:
+            path: 005_invoice_line.sql
+            relativeToChangelogFile: true
+            stripComments: false

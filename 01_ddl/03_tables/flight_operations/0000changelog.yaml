@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_flight_operations_001_flight_status
+      author: pemarival
+      labels: "01_ddl,03_tables,flight_operations"
+      comment: Creates table flight_status.
+      changes:
+        - sqlFile:
+            path: 001_flight_status.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_flight_operations_002_delay_reason_type
+      author: pemarival
+      labels: "01_ddl,03_tables,flight_operations"
+      comment: Creates table delay_reason_type.
+      changes:
+        - sqlFile:
+            path: 002_delay_reason_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_flight_operations_003_flight
+      author: pemarival
+      labels: "01_ddl,03_tables,flight_operations"
+      comment: Creates table flight.
+      changes:
+        - sqlFile:
+            path: 003_flight.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_flight_operations_004_flight_segment
+      author: pemarival
+      labels: "01_ddl,03_tables,flight_operations"
+      comment: Creates table flight_segment.
+      changes:
+        - sqlFile:
+            path: 004_flight_segment.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_flight_operations_005_flight_delay
+      author: pemarival
+      labels: "01_ddl,03_tables,flight_operations"
+      comment: Creates table flight_delay.
+      changes:
+        - sqlFile:
+            path: 005_flight_delay.sql
+            relativeToChangelogFile: true
+            stripComments: false

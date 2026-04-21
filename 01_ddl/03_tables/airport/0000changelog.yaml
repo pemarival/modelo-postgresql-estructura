@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_airport_001_airport
+      author: pemarival
+      labels: "01_ddl,03_tables,airport"
+      comment: Creates table airport.
+      changes:
+        - sqlFile:
+            path: 001_airport.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_airport_002_terminal
+      author: pemarival
+      labels: "01_ddl,03_tables,airport"
+      comment: Creates table terminal.
+      changes:
+        - sqlFile:
+            path: 002_terminal.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_airport_003_boarding_gate
+      author: pemarival
+      labels: "01_ddl,03_tables,airport"
+      comment: Creates table boarding_gate.
+      changes:
+        - sqlFile:
+            path: 003_boarding_gate.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_airport_004_runway
+      author: pemarival
+      labels: "01_ddl,03_tables,airport"
+      comment: Creates table runway.
+      changes:
+        - sqlFile:
+            path: 004_runway.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_airport_005_airport_regulation
+      author: pemarival
+      labels: "01_ddl,03_tables,airport"
+      comment: Creates table airport_regulation.
+      changes:
+        - sqlFile:
+            path: 005_airport_regulation.sql
+            relativeToChangelogFile: true
+            stripComments: false
