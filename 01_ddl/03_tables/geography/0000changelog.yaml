@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_geography_001_time_zone
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table time_zone.
+      changes:
+        - sqlFile:
+            path: 001_time_zone.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_002_continent
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table continent.
+      changes:
+        - sqlFile:
+            path: 002_continent.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_003_country
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table country.
+      changes:
+        - sqlFile:
+            path: 003_country.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_004_state_province
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table state_province.
+      changes:
+        - sqlFile:
+            path: 004_state_province.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_005_city
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table city.
+      changes:
+        - sqlFile:
+            path: 005_city.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_006_district
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table district.
+      changes:
+        - sqlFile:
+            path: 006_district.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_007_address
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table address.
+      changes:
+        - sqlFile:
+            path: 007_address.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_geography_008_currency
+      author: pemarival
+      labels: "01_ddl,03_tables,geography"
+      comment: Creates table currency.
+      changes:
+        - sqlFile:
+            path: 008_currency.sql
+            relativeToChangelogFile: true
+            stripComments: false

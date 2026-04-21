@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01_schemas_001_create_schemas
+      author: pemarival
+      labels: "01_ddl,01_schemas"
+      comment: Creates schemas aligned with the current data model domains.
+      changes:
+        - sqlFile:
+            path: 001_create_schemas.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 01_schemas_002_create_schemas
+      author: pemarival
+      labels: "01_ddl,01_schemas"
+      comment: Creates the audit schema for the project audit domain.
+      changes:
+        - sqlFile:
+            path: 002_create_schemas.sql
+            relativeToChangelogFile: true
+            stripComments: false
