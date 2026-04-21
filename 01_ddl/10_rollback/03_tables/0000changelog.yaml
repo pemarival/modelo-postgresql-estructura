@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10_rollback_03_tables_001_drop_all_tables
+      author: pemarival
+      labels: "10_rollback,03_tables"
+      comment: Drops all tables created by the model in reverse dependency order.
+      changes:
+        - sqlFile:
+            path: 001_drop_all_tables.sql
+            relativeToChangelogFile: true
+            stripComments: false

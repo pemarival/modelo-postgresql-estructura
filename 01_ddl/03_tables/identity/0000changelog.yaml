@@ -1,0 +1,61 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_tables_identity_001_person_type
+      author: pemarival
+      labels: "01_ddl,03_tables,identity"
+      comment: Creates table person_type.
+      changes:
+        - sqlFile:
+            path: 001_person_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_identity_002_document_type
+      author: pemarival
+      labels: "01_ddl,03_tables,identity"
+      comment: Creates table document_type.
+      changes:
+        - sqlFile:
+            path: 002_document_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_identity_003_contact_type
+      author: pemarival
+      labels: "01_ddl,03_tables,identity"
+      comment: Creates table contact_type.
+      changes:
+        - sqlFile:
+            path: 003_contact_type.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_identity_004_person
+      author: pemarival
+      labels: "01_ddl,03_tables,identity"
+      comment: Creates table person.
+      changes:
+        - sqlFile:
+            path: 004_person.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_identity_005_person_document
+      author: pemarival
+      labels: "01_ddl,03_tables,identity"
+      comment: Creates table person_document.
+      changes:
+        - sqlFile:
+            path: 005_person_document.sql
+            relativeToChangelogFile: true
+            stripComments: false
+  - changeSet:
+      id: 03_tables_identity_006_person_contact
+      author: pemarival
+      labels: "01_ddl,03_tables,identity"
+      comment: Creates table person_contact.
+      changes:
+        - sqlFile:
+            path: 006_person_contact.sql
+            relativeToChangelogFile: true
+            stripComments: false

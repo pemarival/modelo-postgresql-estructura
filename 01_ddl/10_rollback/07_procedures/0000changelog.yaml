@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10_rollback_07_procedures_001_drop_procedures
+      author: pemarival
+      labels: "10_rollback,07_procedures"
+      comment: Drops stored procedures created by the model.
+      changes:
+        - sqlFile:
+            path: 001_drop_procedures.sql
+            relativeToChangelogFile: true
+            stripComments: false

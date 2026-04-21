@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 00_extensions_enable_pgcrypto
+      author: pemarival
+      labels: "01_ddl,00_extensions"
+      comment: Enables pgcrypto extension required by gen_random_uuid().
+      changes:
+        - sqlFile:
+            path: 001_enable_uuid_extension.sql
+            relativeToChangelogFile: true
+            stripComments: false

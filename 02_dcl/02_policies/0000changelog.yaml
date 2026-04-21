@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03_dcl_02_policies_001_seed_user_status
+      author: pemarival
+      labels: "01_ddl,03_dcl,policies"
+      comment: Seeds user status policies for account lifecycle.
+      changes:
+        - sqlFile:
+            path: 001_seed_user_status.sql
+            relativeToChangelogFile: true
+            stripComments: false

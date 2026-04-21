@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10_rollback_04_views_001_drop_views
+      author: pemarival
+      labels: "10_rollback,04_views"
+      comment: Drops SQL views created by the model.
+      changes:
+        - sqlFile:
+            path: 001_drop_views.sql
+            relativeToChangelogFile: true
+            stripComments: false
